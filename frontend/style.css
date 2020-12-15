@@ -1,0 +1,20 @@
+.style:hover{
+    background-color: rgb(210, 236, 148);
+    transition: 0.1s;
+    opacity: 0.8;
+}
+*{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#input{
+    display: flex;
+    align-items: flex-end;
+    background-color: rgb(86, 114, 122);
+    color: aliceblue;
+    text-align: right;
+}
+#input{
+    width: 1040px;
+    font-size: 35px;
+}

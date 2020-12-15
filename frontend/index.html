@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body style="background-color: rgb(233, 236, 226);">
+    <div class="container my-5 c-pointer">
+        <div class="row m-4 pb-4">
+            <div class="col">
+                <div class=" input">
+                    <form name="form">
+                        <input type="text" name="textView"  class="rounded form-control text-right"  style="height: 70px; " id="input" value=""> 
+                    </form>    
+                </div>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="row m-4">
+                <div class="col-3 border border-secondary style item clean" id="clean" onclick="clean()">
+                    <p class="text-warning h1 text-center">C</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="back" onclick="back()">
+                    <p class="text-primary h1 text-center">del</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="point" onclick="insert('.')">
+                    <p class="text-primary h1 text-center">.</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="divide" onclick="insert('/')">
+                    <p class="text-primary h1 text-center">/</p>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-3 border border-secondary style" id="seven" onclick="insert('7')">
+                    <p class="text-muted h1 text-center">7</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="eight" onclick="insert('8')">
+                    <p class="text-muted h1 text-center">8</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="nine" onclick="insert('9')">
+                    <p class="text-muted h1 text-center">9</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="multiple" onclick="insert('*')">
+                    <p class="text-primary h1 text-center">*</p>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-3 border border-secondary style" id="four" onclick="insert('4')">
+                    <p class="text-muted h1 text-center">4</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="five" onclick="insert('5')">
+                    <p class="text-muted h1 text-center">5</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="six" onclick="insert('6')">
+                    <p class="text-muted h1 text-center">6</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="minus"  onclick="insert('-')">
+                    <p class="text-primary h1 text-center">-</p>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-3 border border-secondary style" id="one" onclick="insert('1')">
+                    <p class="text-muted h1 text-center">1</p>
+                </div>
+                <div class="col-3 border border-secondary style id="two" onclick="insert('2')">
+                    <p class="text-muted h1 text-center">2</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="three" onclick="insert('3')">
+                    <p class="text-muted h1 text-center">3</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="plus" onclick="insert('+')">
+                    <p class="text-primary h1 text-center">+</p>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-3 border border-secondary style" id="brackets" onclick="insert('(')">
+                    <p class="text-muted h1 text-center">(</p>
+                </div>
+                <div class="col-3 border border-secondary style id="zero" onclick="insert('0')">
+                    <p class="text-muted h1 text-center">0</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="brackets" onclick="insert(')')">
+                    <p class="text-muted h1 text-center">)</p>
+                </div>
+                <div class="col-3 border border-secondary style" id="equals" onclick="equal()">
+                    <p class="text-warning h1 text-center">=</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
